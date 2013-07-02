@@ -11,16 +11,15 @@ module SudokuBuilder
       @agent.agent.http.ca_file = 'config/curl-ca-bundle.crt'
     end
 
-    protected
-      def log_in(username, password)
-        @username = username
-        @password = password
-        page = @agent.get(@login_url)
-        login_form = page.form_with(action: '/sso/login')
-        login_form.username = @username
-        login_form.password = @password
-        @current_page = @agent.submit(login_form)
-      end
+    def log_in(username, password)
+      @username = username
+      @password = password
+      page = @agent.get(@login_url)
+      login_form = page.form_with(action: '/sso/login')
+      login_form.username = @username
+      login_form.password = @password
+      @current_page = @agent.submit(login_form)
+    end
   end
 end
 
