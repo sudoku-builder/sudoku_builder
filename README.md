@@ -12,20 +12,20 @@ Edit Gemfile:
 ```
 
 And then execute:
-
+```bash
     $ bundle
-
+```
 ## Usage
 
-Once the gem is installed, set shell environment variables SUDOKU_USERNAME and SUDOKU_PASSWORD:
-
+Once the gem is installed, set shell environment variables with credentials:
+```bash
     $ export SUDOKU_USERNAME=yourusername
     $ export SUDOKU_PASSWORD=yourpassword
-
+```
 then run:
-
+```bash
     $ rake sudoku:build
-
+```
 ## Contributing
 
 1. Fork it
