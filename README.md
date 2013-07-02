@@ -8,7 +8,7 @@ selects build package action and confirms it without reinstaling dependencies.
 Edit Gemfile:
 
 ```ruby
-    gem 'sudoku_builder', git: 'git@github.com:sudoku-builder/sudoku_builder.git'
+	gem 'sudoku_builder', git: 'git://github.com/sudoku-builder/sudoku_builder.git'
 ```
 
 And then execute:
