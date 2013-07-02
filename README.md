@@ -5,27 +5,26 @@ selects build package action and confirms it without reinstaling dependencies.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Edit Gemfile:
 
-    ```ruby
-    gem 'sudoku_builder'
-    ```
+```ruby
+    gem 'sudoku_builder', git: 'git@github.com:sudoku-builder/sudoku_builder.git'
+```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install sudoku_builder
-
 ## Usage
 
-Once the gem is installed, set shell environment variables SUDOKU_USERNAME and
-SUDOKU_PASSWORD then run:
+Once the gem is installed, set shell environment variables SUDOKU_USERNAME and SUDOKU_PASSWORD:
 
+    $ export SUDOKU_USERNAME=yourusername
+    $ export SUDOKU_PASSWORD=yourpassword
 
-    $ script/sudoku_builder
+then run:
+
+    $ rake sudoku:build
 
 ## Contributing
 
