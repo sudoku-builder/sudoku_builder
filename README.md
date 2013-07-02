@@ -1,6 +1,6 @@
 # SudokuBuilder
 
-Automates package building on onion/sudoku. Script logs in onion account,
+Automates package building on onion/sudoku. Script logs into onion account,
 selects build package action and confirms it without reinstaling dependencies.
 
 ## Installation
